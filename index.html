@@ -1,32 +1,68 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background-color:#b2f8ef
+ 
+}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="header">
-    <div class="container header-content">
+header{
+  background:#0a3d62;
+  color:#fff;
+  position:fixed;
+  width:100%;
+  top:0;
+}
 
-        <!-- Logo + Nome -->
-        <div class="logo-area">
-            <img src="logo.png" alt="Logo" class="logo">
-            <span class="nome">Minha Empresa</span>
-        </div>
+.container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+}
 
-        <!-- Menu -->
-        <nav class="menu">
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#beneficios">Benefícios</a>
-            <a href="#contato">Contato</a>
-        </nav>
+nav a{
+  color:#fff;
+  margin-left:15px;
+  text-decoration:none;
+}
 
-    </div>
-</header>
-</body>
-</html>
+.secao{
+  padding:100px 20px;
+  margin-top:60px;
+}
+
+.hero {
+  height: 100vh;
+
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
+    url("OIP.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  max-width:300px;
+}
+
+input, textarea, button{
+  margin-top:10px;
+  padding:8px;
+}
+
+@media(max-width:768px){
+  .container{
+    flex-direction:column;
+  }
+}
