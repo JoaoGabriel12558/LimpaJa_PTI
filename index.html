@@ -1,68 +1,72 @@
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background-color:#b2f8ef
- 
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limpeza de Estofados</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-header{
-  background:#0a3d62;
-  color:#fff;
-  position:fixed;
-  width:100%;
-  top:0;
-}
+<body>
 
-.container{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px;
-}
+<header>
+  <div class="container">
+    <h1>EstofClean</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
 
-nav a{
-  color:#fff;
-  margin-left:15px;
-  text-decoration:none;
-}
+<section id="inicio" class="secao hero">
+  <h2>Renove seus estofados com limpeza profissional</h2>
+  <p>Mais conforto e higiene para sua casa</p>
+</section>
 
-.secao{
-  padding:100px 20px;
-  margin-top:60px;
-}
+<section id="sobre" class="secao">
+  <h2>Sobre a empresa</h2>
+  <p>Somos especialistas em limpeza e higienização de estofados com equipamentos profissionais e atendimento em domicílio.</p>
+</section>
 
-.hero {
-  height: 100vh;
+<section id="servicos" class="secao">
+  <h2>Serviços</h2>
+  <ul>
+    <li>Limpeza de sofás</li>
+    <li>Higienização de colchões</li>
+    <li>Limpeza de cadeiras</li>
+    <li>Estofados automotivos</li>
+  </ul>
+</section>
 
-  background-image:
-    linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
-    url("OIP.webp");
+<section id="beneficios" class="secao">
+  <h2>Benefícios</h2>
+  <ul>
+    <li>Eliminação de ácaros</li>
+    <li>Secagem rápida</li>
+    <li>Produtos profissionais</li>
+    <li>Atendimento em domicílio</li>
+  </ul>
+</section>
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+<section id="depoimentos" class="secao">
+  <h2>Depoimentos</h2>
+  <p>Clientes satisfeitos com nosso serviço de limpeza.</p>
+</section>
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
+<section id="contato" class="secao">
+  <h2>Entre em contato</h2>
+  <form>
+    <input type="text" placeholder="Nome" required>
+    <input type="tel" placeholder="Telefone" required>
+    <textarea placeholder="Mensagem"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
-}
-
-form{
-  display:flex;
-  flex-direction:column;
-  max-width:300px;
-}
-
-input, textarea, button{
-  margin-top:10px;
-  padding:8px;
-}
-
-@media(max-width:768px){
-  .container{
-    flex-direction:column;
-  }
-}
+</body>
+</html>
